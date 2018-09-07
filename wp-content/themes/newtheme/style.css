@@ -1,0 +1,91 @@
+#html {
+    margin-top: 0 !important;
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+.header {
+    margin-top: -21px;
+}
+h1 {
+    color: white;
+}
+.header , footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+}
+.main {
+    display: flex;
+}
+.main-content {
+    flex: 8;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+.blog-post {
+    width: 90%;
+    margin: 5px;
+    border-bottom: 5px solid lightgray;
+    border-left: 5px solid lightgray;
+    padding-left: 20px;
+}
+li {
+    list-style-type: none;
+}
+.nav {
+    background-color: gainsboro;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column; 
+}
+.pages {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: space-around
+}
+.start-link {
+    padding: 10px;
+}
+.archives {
+    margin-top: 10px;
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.archives-header {
+    margin-top: 10px;
+}
+.pages li {
+    position: relative;
+    padding: 10px;
+    font-weight: 500;	
+}
+.content > p {
+    word-break: break-word;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
