@@ -4,6 +4,7 @@
 body {
     margin: 0;
     height: 100vh;
+    position: relative;
 }
 .header {
     margin-top: -21px;
@@ -16,6 +17,8 @@ h1 {
     justify-content: center;
     align-items: center;
     color: red;
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color: cornflowerblue;
     width: 100%;
     height: 10vh;
@@ -30,10 +33,14 @@ footer {
     width: 100%;
     height: 10vh;
     margin: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
 }
 .main {
     display: flex;
-    height: 77vh;
+    min-height: 77vh;
 }
 .main-content {
     flex: 8;
@@ -41,7 +48,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
 }
 ::-webkit-scrollbar {
     width: 0px;
